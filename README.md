@@ -13,6 +13,10 @@ Für jede Aufgabe gibt es ein separaters Projekt, bei dem die Klasse `Program`
 (Datei `Program.cs`) jeweils eine `Main()`-Methode enthält. Betrachten Sie
 zunächst jeweils diese Methode, um das Programm verstehen zu können.
 
+Wechseln Sie ins `csharp`-Unterverzeichnis:
+
+    cd csharp/
+
 Bearbeiten Sie die folgenden Aufgaben:
 
 ### Aufgabe 0: Geometrie (`Geometry`)
@@ -92,7 +96,7 @@ Bauen Sie die Simulation foldendermassen um:
     - Schreiben Sie hierzu eine neue Klasse für das `Display`.
 3. Überlegen Sie sich, ob die Ereignisse als eine Reihe von Variablen (Name des
    Parkhauses, Füllstand usw.) übermittelt werden sollen, oder ob hier ein
-   spezielles `Event`-Objekt hilfreich wäare.
+   spezielles `Event`-Objekt hilfreich wäre.
 4. Ein- und ausfahrende Autos einerseits und der Füllstand des Parkhauses
    andererseits sollen nicht mehr in getrennten Meldungen ausgegeben werden,
    sondern zusammen als eine Meldung:
@@ -112,13 +116,17 @@ Neu:
     A car entered the lot 'Bahnhof Parking': 3/100 occupied.
     A car left the lot 'Bahnhof Parking': 2/100 occupied.
 
+Diese kompakte Ausgabe ist nur möglich, wenn auf Polling (d.h. Anfragen in
+bestimmten Intervallen) verzichtet wird und man stattdessen einen Mechanismus
+wie einen Observer verwendet.
+
 ### Aufgabe 3: Ligatabelle (`LeagueTable`)
 
 Entwurfsmuster: [Builder](https://refactoring.guru/design-patterns/builder)
 (_creational_)
 
-Beim Projekt `LeagueTable` handelt es sich um einen Auszug aus dem bereits
-bekannten `SuperLeague`-Projekt.
+Beim Projekt `LeagueTable` geht es um einen Aspekt aus dem bereits bekannten
+`soccer-table`-Projekt.
 
 Sie können die Anwendung folgendermassen ausführen:
 
