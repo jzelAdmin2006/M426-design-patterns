@@ -27,8 +27,12 @@ namespace ParkingLot
             display.Join();
         }
 
-        public static void FillParkingLots(object data)
+        public static void FillParkingLots(object? data)
         {
+            if (data == null)
+            {
+                throw new Exception("data must be a valid parking lot");
+            }
             Random random = new();
             ParkingLot lot = (ParkingLot)data;
             while (lot.Occupied < lot.Capacity)
@@ -39,8 +43,12 @@ namespace ParkingLot
             }
         }
 
-        public static void EmptyParkingLots(object data)
+        public static void EmptyParkingLots(object? data)
         {
+            if (data == null)
+            {
+                throw new Exception("data must be a valid parking lot");
+            }
             Random random = new();
             ParkingLot lot = (ParkingLot)data;
             while (lot.Occupied > 0)
@@ -51,8 +59,12 @@ namespace ParkingLot
             }
         }
 
-        public static void Display(object data)
+        public static void Display(object? data)
         {
+            if (data == null)
+            {
+                throw new Exception("data must be a valid parking lot");
+            }
             ParkingLot lot = (ParkingLot)data;
             while (true)
             {
