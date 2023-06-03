@@ -7,11 +7,11 @@ Informationen zum Lösen der folgenden Aufgaben.
 Erstellen Sie einen Fork vom vorliegenden Repository und klonen Sie
 anschliessend Ihr persönliches Repository.
 
-## Aufgaben in C# (`csharp`)
+## Aufgaben in C# (`csharp/`)
 
-Für jede Aufgabe gibt es ein separaters Projekt, bei dem die Klasse `Program`
+Für jede Aufgabe gibt es ein separates Projekt, bei dem die Klasse `Program`
 (Datei `Program.cs`) jeweils eine `Main()`-Methode enthält. Betrachten Sie
-zunächst jeweils diese Methode, um das Programm verstehen zu können.
+zunächst jeweils diese Methode, um den gegebenen Code verstehen zu können.
 
 Wechseln Sie ins `csharp`-Unterverzeichnis:
 
@@ -138,3 +138,15 @@ schwer lesbar.
 
 Erweitern Sie die Klasse `TableRow` um einen _Builder_, wodurch die
 Objekterstellung einfacher und besser verständlich werden sollte.
+
+## Aufgaben in Python (`python/`)
+
+Für jede Aufgabe gibt es ein separates Modul mit einem ausführbaren Skript
+(Datei `main.py`). Betrachten Sie zunächst jeweils dieses Skript, um den
+gegebenen Code verstehen zu können.
+
+Wechseln Sie ins `python`-Unterverzeichnis:
+
+### Aufgabe 0: Geometrie (`geometry`)
+
+TODO
