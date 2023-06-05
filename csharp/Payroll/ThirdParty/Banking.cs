@@ -6,7 +6,8 @@ namespace Payroll.ThirdParty
     {
         public static void PayOut(AccountHolder recipient, float salary)
         {
-            Console.WriteLine($"Pay {salary:C2} to {recipient}");
+            string target = recipient.GetAccountDetails();
+            Console.WriteLine($"Pay {salary:C2} to {recipient} at {target}");
         }
     }
 }

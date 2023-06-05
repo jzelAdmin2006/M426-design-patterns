@@ -15,7 +15,7 @@ namespace Payroll
             johnDoe.AddNote("AccountDetails", "ABC-123");
             johnDoe.AddNote("Position", "Lead Engineer");
             jayneDone.AddNote("AccountDetails", "XYZ-789");
-            johnDoe.AddNote("Position", "Head of HR");
+            jayneDone.AddNote("Position", "Head of HR");
 
             // FIXME: Payroll.Employable -> Payroll.ThirdParty
             // Banking.PayOut(johnDoe, johnDoe.GetSalary() / 12);
