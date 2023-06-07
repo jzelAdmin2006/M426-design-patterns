@@ -9,7 +9,7 @@ namespace LeagueTable
         public int Ties { get; set; }
         public int GoalsScored { get; set; }
         public int GoalsConceded { get; set; }
-        public int GoalDifference
+        public int GoalsDifference
         {
             get { return this.GoalsScored - this.GoalsConceded; }
         }
@@ -39,7 +39,7 @@ namespace LeagueTable
 
         public override string ToString()
         {
-            return $"{TeamName, 20} {Rank, 2} {Wins, 2} {Defeats, 2} {Ties, 2} {GoalsScored, 2} {GoalsConceded, 2} {GoalDifference, 2} {Points, 2}";
+            return $"{TeamName, 20} {Rank, 2} {Wins, 2} {Defeats, 2} {Ties, 2} {GoalsScored, 2} {GoalsConceded, 2} {GoalsDifference, 2} {Points, 2}";
         }
     }
 }
