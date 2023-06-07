@@ -1,5 +1,5 @@
-from employee import Employee
-from third_party import pay_out
+from payroll.employee import Employee
+from payroll.third_party.banking import pay_out
 
 if __name__ == "__main__":
     john_doe = Employee("John", "Doe", 120000)

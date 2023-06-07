@@ -1,7 +1,4 @@
-class AccountHolder:
-    def GetAccountDetails():
-        pass
-
+from .account_holder import AccountHolder
 
 def pay_out(recipient: AccountHolder, salary: float):
     target = recipient.get_account_details()

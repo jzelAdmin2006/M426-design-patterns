@@ -1,12 +1,15 @@
-class Employable:
+from typing import Protocol
+
+
+class Employable(Protocol):
     def get_full_name(self):
-        pass
+        raise NotImplementedError()
 
     def get_salary(self):
-        pass
+        raise NotImplementedError()
 
     def add_note(self, kind: str, note: str):
-        pass
+        raise NotImplementedError()
 
     def get_note(self, kind: str) -> str:
-        pass
+        raise NotImplementedError()
