@@ -12,22 +12,22 @@ namespace ParkingLot
 
         static void Main(string[] args)
         {
-            ParkingLot bahnhofParking = new("Bahnhof Parking", 100);
-            Thread fill = new(Program.FillParkingLots);
-            Thread empty = new(Program.EmptyParkingLots);
-            Thread display = new(Program.DisplayParkingLots);
+            ParkingLot lot = new("Bahnhof Parking", 100);
+            Thread fill = new(Program.Fill);
+            Thread empty = new(Program.Empty);
+            Thread display = new(Program.DisplayState);
 
-            display.Start(bahnhofParking);
-            fill.Start(bahnhofParking);
+            display.Start(lot);
+            fill.Start(lot);
             Thread.Sleep(initialFillPhaseMillis);
-            empty.Start(bahnhofParking);
+            empty.Start(lot);
 
             fill.Join();
             empty.Join();
             display.Join();
         }
 
-        public static void FillParkingLots(object? data)
+        public static void Fill(object? data)
         {
             if (data == null)
             {
@@ -43,7 +43,7 @@ namespace ParkingLot
             }
         }
 
-        public static void EmptyParkingLots(object? data)
+        public static void Empty(object? data)
         {
             if (data == null)
             {
@@ -59,7 +59,7 @@ namespace ParkingLot
             }
         }
 
-        public static void DisplayParkingLots(object? data)
+        public static void DisplayState(object? data)
         {
             if (data == null)
             {
