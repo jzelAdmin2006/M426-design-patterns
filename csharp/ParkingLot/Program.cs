@@ -15,7 +15,7 @@ namespace ParkingLot
             ParkingLot bahnhofParking = new("Bahnhof Parking", 100);
             Thread fill = new(Program.FillParkingLots);
             Thread empty = new(Program.EmptyParkingLots);
-            Thread display = new(Program.Display);
+            Thread display = new(Program.DisplayParkingLots);
 
             display.Start(bahnhofParking);
             fill.Start(bahnhofParking);
@@ -59,7 +59,7 @@ namespace ParkingLot
             }
         }
 
-        public static void Display(object? data)
+        public static void DisplayParkingLots(object? data)
         {
             if (data == null)
             {

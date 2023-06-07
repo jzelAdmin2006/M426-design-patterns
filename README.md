@@ -147,14 +147,4 @@ gegebenen Code verstehen zu können.
 
 Wechseln Sie ins `python`-Unterverzeichnis:
 
-### Aufgabe 1: Lohnbuchhaltung (`payroll`)
-
-Entwurfsmuster: [Adapter](https://refactoring.guru/design-patterns/adapter)
-(_structural_)
-
-Beim Projekt `payroll` handelt es um eine kleine Mitarbeiterverwaltung mit
-Lohnbuchhaltung.
-
-Sie können die Anwendung folgendermassen ausführen:
-
-    python payroll/main.py
+TODO: Python-Aufgaben
