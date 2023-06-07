@@ -4,13 +4,13 @@ from math import sqrt
 from .rectangular import Rectangular
 
 
-def get_area(rectangle: Rectangular) -> int:
-    return rectangle.get_width() * rectangle.get_height()
+def get_area(rect: Rectangular) -> int:
+    return rect.get_width() * rect.get_height()
 
 
-def get_perimeter(rectangle: Rectangular) -> int:
-    return 2 * rectangle.get_width() + 2 * rectangle.get_height()
+def get_perimeter(rect: Rectangular) -> int:
+    return 2 * rect.get_width() + 2 * rect.get_height()
 
 
-def get_diagonal(rectangle: Rectangular) -> float:
-    return sqrt(pow(rectangle.get_height(), 2.0) + pow(rectangle.get_width(), 2.0))
+def get_diagonal(rect: Rectangular) -> float:
+    return sqrt(pow(rect.get_height(), 2.0) + pow(rect.get_width(), 2.0))
