@@ -23,7 +23,7 @@ class TableRow:
 
     def __str__(self) -> str:
         return (
-            f"{self.name:20s} {self.rank:2d} {self.wins:2d} {self.defeats:2d}"
-            + f" {self.ties:2d} {self.goals_scored:2d} {self.goals_conceded:2d}"
-            + f" {self.goals_difference:2d} {self.points():2d}"
+            f"{self.name:20s} {self.rank:2d} {self.wins:2d} {self.defeats:2d} "
+            f"{self.ties:2d} {self.goals_scored:2d} {self.goals_conceded:2d} "
+            f"{self.goals_difference:2d} {self.points():2d}"
         )
