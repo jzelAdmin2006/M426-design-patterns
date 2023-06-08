@@ -6,6 +6,8 @@ zu können.
 
 Wechseln Sie ins `python`-Unterverzeichnis:
 
+    cd python/
+
 Bearbeiten Sie die folgenden Aufgaben:
 
 ## Aufgabe 0: Geometrie (`Geometry`)
