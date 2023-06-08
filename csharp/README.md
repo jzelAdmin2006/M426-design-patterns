@@ -17,7 +17,7 @@ Entwurfsmuster: [Adapter](https://refactoring.guru/design-patterns/adapter)
 
 Hierbei handelt es sich um das Beispiel aus den Folien:
 
-![Das Geometry-Beispiel von den Folien](adapter-solution.png)
+![Das Geometry-Beispiel von den Folien](../adapter-solution.png)
 
 Sie können die Anwendung folgendermassen ausführen:
 
@@ -26,10 +26,10 @@ Sie können die Anwendung folgendermassen ausführen:
 Studieren Sie den Code im `Geometry`-Verzeichnis und versuchen Sie diesen zu
 verstehen.
 
-Erweitern Sie den `Calculator` um eine weitere Methode `double
-GetWidthHeightRatio(Rectangular)`, welche das Verhältnis von Breite zur Höhe
-eines Rechtecks berechnet. Testen Sie diese Methode mit Quadraten; das
-Verhältnis müsste jeweils `1.0` betragen.
+Erweitern Sie den `Calculator` (`ThirdParty/Calculator.cs`) um eine weitere
+Methode `double GetWidthHeightRatio(Rectangular)`, welche das Verhältnis von
+Breite zur Höhe eines Rechtecks berechnet. Testen Sie diese Methode mit
+Quadraten; das Verhältnis müsste jeweils `1.0` betragen.
 
 ## Aufgabe 1: Lohnbuchhaltung (`Payroll`)
 
@@ -73,8 +73,8 @@ einen Füllstand (`Occupied`). Mithilfe der Methoden `Enter()` und `Exit()` kann
 ein Auto in das Parkhaus einfahren bzw. dieses verlassen.
 
 Die Klasse `Program` simuliert das Ein- und Ausfahren von Autos mit
-nebenläufigen Threads. Die Methode `Display` zeigt dabei in einem eigenen Thread
-den Füllstand in regelmässigen Intervallen an.
+nebenläufigen Threads. Die Methode `DisplayState()` zeigt dabei in einem eigenen
+Thread den Füllstand in regelmässigen Intervallen an.
 
 Bauen Sie die Simulation foldendermassen um:
 
@@ -129,3 +129,6 @@ schwer lesbar.
 
 Erweitern Sie die Klasse `TableRow` um einen _Builder_, wodurch die
 Objekterstellung einfacher und besser verständlich werden sollte.
+
+Passen Sie das Hauptprogramm in `Program.cs` so an, dass dieser Gebrauch vom
+Builder macht.
