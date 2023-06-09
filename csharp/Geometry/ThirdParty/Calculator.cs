@@ -20,5 +20,10 @@ namespace Geometry.ThirdParty
                 Math.Pow(rectangle.GetHeight(), 2.0) + Math.Pow(rectangle.GetWidth(), 2.0)
             );
         }
+
+        public static double GetWidthHeightRatio(Rectangular rectangle)
+        {
+            return (double)rectangle.GetWidth() / rectangle.GetHeight();
+        }
     }
 }
