@@ -18,28 +18,29 @@ namespace LeagueTable
             get { return this.Wins * 3 + this.Ties; }
         }
 
-        public TableRow(
-            string teamName,
-            int rank,
-            int wins,
-            int defeats,
-            int ties,
-            int goalsScored,
-            int goalsConceded
-        )
+        private TableRow()
         {
-            this.TeamName = teamName;
-            this.Rank = rank;
-            this.Wins = wins;
-            this.Defeats = defeats;
-            this.Ties = ties;
-            this.GoalsScored = goalsScored;
-            this.GoalsConceded = goalsConceded;
+            this.TeamName = string.Empty;
         }
 
         public override string ToString()
         {
-            return $"{TeamName, 20} {Rank, 2} {Wins, 2} {Defeats, 2} {Ties, 2} {GoalsScored, 2} {GoalsConceded, 2} {GoalsDifference, 2} {Points, 2}";
+            return $"{TeamName,20} {Rank,2} {Wins,2} {Defeats,2} {Ties,2} {GoalsScored,2} {GoalsConceded,2} {GoalsDifference,2} {Points,2}";
+        }
+
+        public class TableRowBuilder
+        {
+            private TableRow Row = new();
+
+            public TableRowBuilder TeamName(string teamName) { Row.TeamName = teamName; return this; }
+            public TableRowBuilder Rank(int rank) { Row.Rank = rank; return this; }
+            public TableRowBuilder Wins(int wins) { Row.Wins = wins; return this; }
+            public TableRowBuilder Defeats(int defeats) { Row.Defeats = defeats; return this; }
+            public TableRowBuilder Ties(int ties) { Row.Ties = ties; return this; }
+            public TableRowBuilder GoalsScored(int goalsScored) { Row.GoalsScored = goalsScored; return this; }
+            public TableRowBuilder GoalsConceded(int goalsConceded) { Row.GoalsConceded = goalsConceded; return this; }
+
+            public TableRow Build() { return Row; }
         }
     }
 }
